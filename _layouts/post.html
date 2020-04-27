@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <div id="site">
+        <div class="container">
+            <!-- <div class="header">
+                {% include header.html %}
+                
+            </div> -->
+            <div class="post-page-container">
+                <div class="page-body">
+                    <div class="page-posts" id = "article-body">
+                        
+                        <nav class="post-date">
+                         <p>{{ page.date | date_to_string }}</p>
+                        </nav>
+                        <div class="post-header">
+                            <div class="post-title">
+                                <h1>{{ page.title }}</h1>
+                            </div>
+                            <div class="post-extras">
+                                <div class="post-tags">
+                                    
+                                </div>
+                                <div class="post-sharing">
+                                    {% include share.html %}
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="page-post">
+                            {{ content }}
+                        </div>
+                    </div>
+                    <div class="post-nav">
+                        <a href="/">Exit post</a>
+                    </div>
+                    <!-- <div class="homepage-profile">
+                        <div class="bio">
+                            {% include profile.html %}
+                            {% include socials.html %}
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- flip between posts and flip between posts in posts -->
+        <footer>
+            <div class="footer">
+                {% include footer.html %}
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

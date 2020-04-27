@@ -1,0 +1,14 @@
+---
+layout: default
+title: Unraveling Code
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+      <p><span>{{ post.date | date: "%b %-d, %Y" }}</span><span id="tags">html css</span></p>
+    </li>
+  {% endfor %}
+</ul>

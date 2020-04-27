@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <div id="site">
+        <div class="container">
+            <div class="header">
+                {% include header.html %}
+                
+            </div>
+            <div class="page-body">
+                <div class="page-posts">
+                    {{content}}
+                </div>
+                <div class="homepage-profile">
+                    <div class="bio">
+                        {% include profile.html %}
+                        {% include socials.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- flip between pages and flip between posts in posts -->
+        <footer>
+            <div class="footer">
+                {% include footer.html %}
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

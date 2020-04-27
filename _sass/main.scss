@@ -1,0 +1,403 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+body{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  line-height: 1.6;
+}
+
+.container{
+  border-top: 8px solid pink;
+
+  @media only screen and (max-width:768px){
+    border-top: 6px solid pink;
+  }
+}
+  
+
+#site{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.site-title{
+  text-align: center;
+  font-size: 2.5vw;
+  color: 	grey;
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  
+
+  @media only screen and (max-width:768px){
+    font-size: 6vw;
+  }
+
+  a{
+    text-decoration: none;
+    color: grey;
+  }
+}
+
+.container{
+  min-height: 50rem;
+}
+
+
+.page-body{
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+
+  @media only screen and (max-width:768px){
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .homepage-profile{
+    width: 29%;
+    padding-top: 2rem;
+
+
+    @media only screen and (max-width: 768px){
+      width: 100%;
+      padding: 0 ;
+    }
+
+    .bio{
+      width: 90%;
+      padding: 1rem;
+      margin: 0 auto;
+      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+
+      @media only screen and (max-width: 768px){
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      p{
+        font-size: 0.75rem;
+      }
+
+      span{
+        
+        a{
+          text-decoration: none;
+          color: pink;
+        }
+        a:hover{
+          color: 	#C0C0C0;
+        }
+      }
+
+      .socials{
+        margin-top: 1rem;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 768px){
+          width: 90%;
+          margin-top: 1.5rem;
+        }
+    }
+    
+    .socials img{
+        width: 20px;
+        height: 20px;
+
+      @media only screen and (max-width: 768px){
+        width: 15px;
+        height:15px;
+      }
+    }
+    
+    }
+  }
+
+  #article-body{
+    width: 50%;
+    padding: 2rem;
+
+    @media only screen and (max-width:768px){
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .page-posts{
+    width: 69%;
+
+    @media only screen and (max-width:768px){
+      padding: 0 1rem;
+      min-height: 50rem;
+    }
+    
+    
+    ul{
+      list-style-type: none;
+      padding: 0 3rem;
+
+      @media only screen and (max-width:768px){
+        padding: 0;
+      }
+
+      li{
+        margin: 2rem 0;
+        width: 100%;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+        padding: 1rem;
+
+        @media only screen and (max-width:768px){
+          width: 100%;
+        }
+
+        li:hover{
+          box-shadow: 0px 2px 6px 0px purple;
+        }
+
+        h2{
+          font-size: 1.3rem;
+          font-weight: 700;
+        }
+
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        p{
+          margin: 0.5rem 0;
+          width: 90%;
+          font-size: 0.8rem;
+        }
+
+        p:last-child{
+          color: black;
+          font-weight: bold;
+        }
+
+
+        #tags{
+          margin-left: 0.5rem;
+          color: pink;
+          font-weight: lighter;
+        }
+      }
+
+      li:last-child{
+        border-bottom: none;
+      }
+    }
+    @media only screen and (max-width:768px){
+      width: 100%;
+    }
+  }
+}
+
+footer{
+  padding: 2rem;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color:#C0C0C0;
+  background-color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 768px){
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+
+  a{
+    text-decoration: none;
+    color: #C0C0C0;
+  }
+  a:hover{
+    color: pink;
+
+    @media only screen and (max-width: 768px){
+      color: #C0C0C0;
+    }
+  }
+  p{
+    margin: 0.3rem;
+    @media only screen and (max-width: 768px){
+      
+      font-size: 0.6rem;
+    }
+  }
+}
+
+
+// Post page
+
+.post-header{
+  padding-bottom: 3rem;
+  padding: 0 1rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+    
+
+  @media only screen and (max-width: 768px){
+      
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+
+  }
+
+  hr{
+    width: 70%;
+    margin-top: 1rem;
+
+    @media only screen and (max-width: 768px){
+      display: block;
+      margin-top: 0;;
+  
+    }
+  }
+
+}
+
+.post-nav{
+  text-align: right;
+  padding: 1rem 3rem;
+  display: none;
+
+  @media only screen and (max-width: 768px){
+    padding: 1rem;
+    display: block;
+  }
+
+  a{
+    text-decoration: none;
+    color: pink;
+  }
+
+  a:hover{
+    color: #C0C0C0;
+  }
+}
+
+.post-title{
+  font-size: 1.5rem;
+
+  @media only screen and (max-width: 768px){
+    font-size: 1rem;
+  }
+
+  h1{
+    font-weight: normal;
+    font-weight: 700;
+  }
+}
+
+
+
+
+.page-post{
+  
+  @media only screen and (max-width: 768px){
+    padding: 0.5rem;
+  }
+
+  p{
+    margin-bottom: 1rem;
+  }
+}
+
+.post-date{
+  text-align: right;
+  padding-right: 1rem;
+  padding-top: 0.8rem;
+  color:#C0C0C0;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.post-nav{
+  font-size: 0.8rem;
+}
+
+.post-extras{
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+
+  .post-tags{
+    margin: 0.2rem 0;
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+
+    p:first-child{
+      margin-left: 0;
+    }
+
+    p{
+      margin: 0 0.5rem;
+    }
+  }
+
+  .post-sharing{
+    display: flex;
+    justify-content: center;
+
+    .share-social{
+      width: 100%;
+    }
+
+    #socials{
+      width: 10%;
+      padding-top: 0.5rem;
+
+      
+
+      ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+        
+
+        @media only screen and (max-width: 768px){
+          margin-top: 0.5rem;
+        }
+
+        li{
+          margin: 0;
+          box-shadow: 0 0 0 0;
+          padding: 0;
+        }
+        li:last-child{
+          margin-left: 1.5rem;
+        }
+      }
+    }
+
+  }
+
+
+}
